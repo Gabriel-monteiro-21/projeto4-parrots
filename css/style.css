@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #EEF9BF;
+    
 }
 
 /*--Formatação do título--*/
@@ -21,27 +22,23 @@ body {
 
 /*--Formatação do container--*/
 .container {
-    width: 872px;
+    width: 900px;
     margin: auto;
-}
-
-/*--Formatação dos cartões--*/
-.conteudo-principal {
-    width: 100%;
-
-    margin-top: 80px;
+    margin-top: 82px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
-.carta, .frente, .verso {
+.carta,
+.frente,
+.verso {
     background-color: #A7E9AF;
     height: 146px;
     width: 117px;
-    
-    margin-bottom: 34px;
+
     border-radius: 5px;
 
     display: flex;
@@ -49,7 +46,7 @@ body {
 
 }
 
-.carta img{
+.carta img {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -60,11 +57,27 @@ body {
     position: absolute;
     z-index: 1;
 }
+
 .frente {
     background-color: #A7E9AF;
     border: 1px solid #99CEA8;
 }
+
 .verso {
     background-color: #A7E9AF;
     border: 1px solid #99CEA8;
+}
+
+/*--Formatação do mobile--*/
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .titulo-principal {
+        width: 90%;
+        font-size: 36px;
+        text-align: center;
+        margin: auto;
+    }
 }
